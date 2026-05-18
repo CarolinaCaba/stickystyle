@@ -10,6 +10,19 @@ body {
     color: #333;
     background: #ffffff;
 }
+.btn-instagram {
+    background: linear-gradient(45deg, #f09433, #d62976, #962fbf);
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.btn-instagram:hover {
+    transform: translateY(-2px);
+    opacity: 0.95;
+}
 
 .container {
     max-width: 1200px;
