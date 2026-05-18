@@ -10,63 +10,11 @@ body {
     color: #333;
     background: #ffffff;
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
-}
-/* Contenedor de botones de contacto */
-.botones-contacto {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-    margin-top: 24px;
-}
-
-.botones-contacto .btn {
-    flex: 1;
-    min-width: 200px;
-    text-align: center;
-    justify-content: center;
-}
-
-/* Botón WhatsApp (ya existente, pero aseguramos) */
-.btn-wsp {
-    background: #25D366;
-    color: white;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.btn-wsp:hover {
-    background: #128C7E;
-    transform: translateY(-2px);
-}
-
-/* Botón Instagram */
-.btn-instagram {
-    background: linear-gradient(45deg, #f09433, #d62976, #962fbf);
-    color: white;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.btn-instagram:hover {
-    transform: translateY(-2px);
-    opacity: 0.95;
-}
-
-/* Responsive para móviles */
-@media (max-width: 768px) {
-    .botones-contacto {
-        flex-direction: column;
-    }
-    
-    .botones-contacto .btn {
-        width: 100%;
-    }
 }
 
 /* Navegación */
@@ -145,7 +93,6 @@ nav {
 
 .highlight {
     color: #bfb6be;
-    position: relative;
 }
 
 .hero-text p {
@@ -194,6 +141,7 @@ nav {
     color: white;
 }
 
+/* Botones de contacto */
 .btn-wsp {
     background: #25D366;
     color: white;
@@ -205,6 +153,33 @@ nav {
 .btn-wsp:hover {
     background: #128C7E;
     transform: translateY(-2px);
+}
+
+.btn-instagram {
+    background: linear-gradient(45deg, #f09433, #d62976, #962fbf);
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-instagram:hover {
+    transform: translateY(-2px);
+    opacity: 0.95;
+}
+
+.botones-contacto {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+
+.botones-contacto .btn {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    justify-content: center;
 }
 
 .hero-image img {
@@ -304,7 +279,6 @@ nav {
 
 .precio-card.destacado {
     border: 2px solid #bfb6be;
-    background: #fff;
 }
 
 .precio-card h3 {
@@ -317,15 +291,6 @@ nav {
     font-weight: 800;
     color: #949ba1;
     margin: 16px 0;
-}
-
-.precio-card p {
-    color: #666;
-    margin: 8px 0;
-}
-
-.precio-card small {
-    color: #999;
 }
 
 /* Proceso */
@@ -360,15 +325,6 @@ nav {
     margin: 0 auto 20px;
 }
 
-.paso h3 {
-    margin-bottom: 12px;
-}
-
-.paso p {
-    color: #666;
-    font-size: 0.95rem;
-}
-
 .proceso-nota {
     background: #f9ddeb;
     padding: 20px;
@@ -377,11 +333,6 @@ nav {
     max-width: 500px;
     margin: 0 auto;
     font-weight: 500;
-}
-
-.proceso-nota i {
-    margin-right: 8px;
-    color: #949ba1;
 }
 
 /* Contacto */
@@ -397,6 +348,7 @@ nav {
     background: white;
     border-radius: 32px;
     padding: 48px;
+    margin: 0 24px;
 }
 
 .contacto-info h2 {
@@ -416,14 +368,6 @@ nav {
 .contacto-detalle i {
     color: #25D366;
     font-size: 1.8rem;
-}
-
-.contacto-mensaje {
-    background: #f9ddeb;
-    padding: 12px;
-    border-radius: 40px;
-    display: inline-block;
-    margin: 16px 0;
 }
 
 .contacto-resumen ul {
@@ -458,7 +402,8 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-    .hero-container, .contacto-container {
+    .hero-container,
+    .contacto-container {
         grid-template-columns: 1fr;
     }
     
@@ -491,15 +436,16 @@ footer {
         font-size: 1.8rem;
     }
     
-    .productos-grid {
-        gap: 20px;
-    }
-    
     .contacto-container {
         padding: 28px;
+        margin: 0 16px;
     }
     
-    .precios-grid {
-        grid-template-columns: 1fr;
+    .botones-contacto {
+        flex-direction: column;
+    }
+    
+    .botones-contacto .btn {
+        width: 100%;
     }
 }
