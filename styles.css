@@ -293,6 +293,15 @@ nav {
     margin: 16px 0;
 }
 
+/* 👶 NOTA INFANTIL - ESTO ES LO QUE FALTABA */
+.nota-infantil {
+    font-size: 0.8rem;
+    margin-top: 12px;
+    padding-top: 8px;
+    border-top: 1px dashed #cccad4;
+    color: #666;
+}
+
 /* Proceso */
 .proceso {
     padding: 80px 0;
